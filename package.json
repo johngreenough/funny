@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "mkdir -p dist && cp -r public/* dist/ 2>/dev/null || true && cp index.html dist/",
+    "build": "mkdir -p dist && cp index.html dist/",
     "deploy": "npm run build && gh-pages -d dist",
     "predeploy": "npm run build"
   },
