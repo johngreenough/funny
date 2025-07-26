@@ -408,17 +408,14 @@
         }
 
         function changeTheme() {
-            themeIndex = (themeIndex + 1) % themes.length;
-            const theme = themes[themeIndex];
-            document.body.style.background = theme.bg;
-            document.querySelector('.title').textContent = theme.title;
+            alert('Error: Theme customization is currently disabled. Please try again later.');
             addMoreChaos();
         }
 
         function addMoreChaos() {
             chaosLevel++;
             
-            // Add random elements
+            // Add random elements silently (no error message)
             const randomEmojis = ['🎪', '🌈', '💩', '🌶️', '🎉', '🚨', '💥', '🎨', '🤪', '🎯'];
             const randomEmoji = randomEmojis[Math.floor(Math.random() * randomEmojis.length)];
             
@@ -449,9 +446,7 @@
         }
 
         function checkChaosLevel() {
-            const cartItems = Math.floor(Math.random() * 10) + 1;
-            const totalPrice = Math.floor(Math.random() * 10000) + 1000;
-            alert(`🛒 Your cart contains ${cartItems} items\n💰 Total: $${totalPrice}.99\n\nThank you for shopping with us!`);
+            alert('Error: Cart service temporarily unavailable. Please try again later.');
             addMoreChaos();
         }
 
@@ -480,7 +475,7 @@
                     console.log('Audio not supported, but chaos continues!');
                 }
             }
-            alert(soundEnabled ? '🔊 Notifications enabled! 🔊' : '🔇 Notifications disabled! 🔇');
+            alert('Error: Notification service unavailable. Please check your browser settings.');
         }
 
         function randomizeEverything() {
@@ -507,7 +502,7 @@
                 setTimeout(() => addMoreChaos(), i * 100);
             }
             
-            alert('🎲 New deals have been loaded! Check out our latest offers! 🎲');
+            alert('Error: Deal loading failed. Please refresh the page and try again.');
         }
 
         // Add random chaos on page load
@@ -555,28 +550,7 @@
 
         // Terrible buying function
         function buyOrange(productName) {
-            const prices = {
-                'Fresh Oranges': '$999.99',
-                'Organic Oranges': '$1,499.99',
-                'Orange Juice': '$2,999.99',
-                'Orange Marmalade': '$3,999.99'
-            };
-            
-            // Randomly change the price when they try to buy
-            const randomPrice = Math.floor(Math.random() * 10000) + 1000;
-            const newPrice = `$${randomPrice}.99`;
-            
-            alert(`🍊 You selected ${productName} for ${prices[productName]}!\n\nDue to high demand, the price has been updated to ${newPrice}.\n\nThank you for your understanding! 🍊`);
-            
-            // Update the displayed price randomly
-            const priceElements = document.querySelectorAll('.gallery-item span');
-            priceElements.forEach(element => {
-                if (Math.random() < 0.3) {
-                    const newRandomPrice = Math.floor(Math.random() * 10000) + 1000;
-                    element.textContent = `Price: $${newRandomPrice}.99`;
-                }
-            });
-            
+            alert('Error: Payment processing is currently unavailable. Please try again in a few minutes.');
             addMoreChaos();
         }
 
@@ -596,7 +570,7 @@
                     // This is the visible button area - prevent the click
                     event.preventDefault();
                     event.stopPropagation();
-                    alert('🍊 Please click the button properly. Our system is very precise! 🍊');
+                    alert('Error: Invalid input detected. Please try again.');
                     return false;
                 }
             }
