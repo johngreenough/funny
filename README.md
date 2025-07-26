@@ -12,12 +12,6 @@ Welcome to the most hilariously bad UI website ever created! This is a showcase 
 - **Random emoji spawns** that appear when you move your mouse
 - **Theme switcher** that cycles through different terrible color schemes
 
-## 🚀 How to Run
-
-### Prerequisites
-- Node.js (version 14 or higher)
-- npm (comes with Node.js)
-
 ### Installation
 
 1. **Install dependencies:**
