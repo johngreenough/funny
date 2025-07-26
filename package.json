@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "echo 'No build step required'"
+    "build": "mkdir -p dist && cp -r public/* dist/ 2>/dev/null || true && cp index.html dist/",
+    "deploy": "npm run build"
   },
   "keywords": ["terrible", "ui", "bad-design", "funny", "chaos"],
   "author": "Your Friendly Neighborhood Chaos Creator",
