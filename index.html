@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌶️ THE WORST WEBSITE EVER 🌶️</title>
+    <title>🍊 THE WORST ORANGE STORE EVER 🍊</title>
     <style>
         body {
             background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff0000);
@@ -256,64 +256,122 @@
         .close:hover {
             color: #00ffff;
         }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            .title {
+                font-size: 2.5em;
+            }
+            .button {
+                font-size: 1.2em;
+                padding: 10px 20px;
+            }
+        }
     </style>
 </head>
 <body class="cursor">
     <div class="container">
         <div class="header">
-            <h1 class="title shake">🌶️ THE WORST WEBSITE EVER 🌶️</h1>
-            <p class="subtitle blink">Welcome to the most terrible UI you've ever seen!</p>
+            <h1 class="title shake">🍊 THE WORST ORANGE STORE EVER 🍊</h1>
+            <p class="subtitle blink">Welcome to the most terrible orange shopping experience!</p>
             <p class="subtitle">Made with ❤️ and lots of bad decisions</p>
         </div>
 
         <div class="marquee">
-            <span>🚨 WARNING: This website is intentionally terrible! 🚨 | 💩 Bad design choices ahead! 💩 | 🌈 Rainbow colors everywhere! 🌈 | 🎪 Welcome to the circus! 🎪</span>
+            <span>🚨 WARNING: This orange store is intentionally terrible! 🚨 | 💩 Bad design choices ahead! 💩 | 🍊 Oranges that taste like disappointment! 🍊 | 🎪 Welcome to the worst shopping experience! 🎪</span>
+        </div>
+
+        <!-- Search Bar with Terrible Autocorrect -->
+        <div style="text-align: center; margin: 30px 0; padding: 20px; background: linear-gradient(45deg, #ffa500, #ff8c00); border: 5px dashed #ff0000; border-radius: 20px;">
+            <h3 style="color: #ff0000; font-size: 2em; margin-bottom: 15px;">🔍 Search for Orange Products 🔍</h3>
+            <input type="text" id="searchBar" placeholder="Type 'orange' to search..." style="
+                font-size: 1.5em; 
+                padding: 15px; 
+                width: 300px; 
+                border: 5px solid #ffff00; 
+                border-radius: 20px; 
+                background: #ff69b4; 
+                color: #000080; 
+                font-family: 'Comic Sans MS';
+                text-align: center;
+            ">
+            <button onclick="searchProducts()" style="
+                margin-left: 10px; 
+                padding: 15px 25px; 
+                font-size: 1.5em; 
+                background: linear-gradient(45deg, #ff0000, #00ff00); 
+                color: #ffff00; 
+                border: 5px solid #ffff00; 
+                border-radius: 20px; 
+                cursor: pointer;
+                font-family: 'Comic Sans MS';
+            ">Search</button>
+            <div id="searchResult" style="margin-top: 15px; font-size: 1.3em; color: #ff0000; font-weight: bold;"></div>
         </div>
 
         <div class="content">
             <div class="card">
-                <h3 class="spinning">🤪 About This Mess</h3>
-                <p>This website was created to showcase the absolute worst UI practices known to mankind. We've included every terrible design choice: Comic Sans font, rainbow gradients, excessive animations, and colors that will make your eyes bleed. Enjoy the chaos!</p>
+                <h3 class="spinning">🍊 About Our Terrible Oranges</h3>
+                <p>Welcome to the worst orange store on the internet! Our oranges are guaranteed to disappoint. We've included every terrible shopping experience: misaligned buttons, broken search, and prices that change randomly. Enjoy the frustration!</p>
             </div>
 
             <div class="card">
-                <h3 class="spinning">🎨 Design Philosophy</h3>
-                <p>Our design philosophy is simple: if it looks good, we change it. If it's readable, we make it unreadable. If it's functional, we break it. We believe in the power of terrible design to make people laugh (or cry).</p>
+                <h3 class="spinning">💸 Our Pricing Strategy</h3>
+                <p>Our pricing philosophy is simple: if you can afford it, we raise the price. If you can't afford it, we raise it more. We believe in the power of terrible pricing to make people cry (or laugh).</p>
             </div>
         </div>
 
         <div class="gallery">
             <div class="gallery-item">
-                <h4>🌈 Rainbow Mode</h4>
-                <p>Because why choose one color when you can have them all?</p>
+                <h4>🍊 Fresh Oranges</h4>
+                <p>Our oranges are guaranteed to be the worst you've ever tasted!</p>
+                <div style="margin-top: 10px;">
+                    <span style="color: #ff0000; font-size: 1.2em; font-weight: bold;">Price: $999.99</span>
+                    <button class="button" onclick="buyOrange('Fresh Oranges')" style="margin-left: 10px; transform: translateX(-50px);">Buy Now</button>
+                </div>
             </div>
             <div class="gallery-item">
-                <h4>📝 Comic Sans</h4>
-                <p>The font that graphic designers love to hate!</p>
+                <h4>🍊 Organic Oranges</h4>
+                <p>Organic disappointment at premium prices!</p>
+                <div style="margin-top: 10px;">
+                    <span style="color: #ff0000; font-size: 1.2em; font-weight: bold;">Price: $1,499.99</span>
+                    <button class="button" onclick="buyOrange('Organic Oranges')" style="margin-left: 10px; transform: translateX(-50px);">Buy Now</button>
+                </div>
             </div>
             <div class="gallery-item">
-                <h4>🎪 Animations</h4>
-                <p>Everything moves, shakes, and spins for no reason!</p>
+                <h4>🍊 Orange Juice</h4>
+                <p>Juice that tastes like regret and sadness!</p>
+                <div style="margin-top: 10px;">
+                    <span style="color: #ff0000; font-size: 1.2em; font-weight: bold;">Price: $2,999.99</span>
+                    <button class="button" onclick="buyOrange('Orange Juice')" style="margin-left: 10px; transform: translateX(-50px);">Buy Now</button>
+                </div>
             </div>
             <div class="gallery-item">
-                <h4>🎯 Bad UX</h4>
-                <p>User experience? What's that? We prefer user confusion!</p>
+                <h4>🍊 Orange Marmalade</h4>
+                <p>Spreadable disappointment for your toast!</p>
+                <div style="margin-top: 10px;">
+                    <span style="color: #ff0000; font-size: 1.2em; font-weight: bold;">Price: $3,999.99</span>
+                    <button class="button" onclick="buyOrange('Orange Marmalade')" style="margin-left: 10px; transform: translateX(-50px);">Buy Now</button>
+                </div>
             </div>
         </div>
 
         <div style="text-align: center; margin: 40px 0;">
-            <button class="button" onclick="showModal()">🎉 Click for a Surprise! 🎉</button>
-            <button class="button" onclick="changeTheme()">🎨 Change Theme (It Gets Worse!) 🎨</button>
-            <button class="button" onclick="addMoreChaos()">💥 Add More Chaos! 💥</button>
-            <button class="button" onclick="checkChaosLevel()">📊 Check Chaos Level 📊</button>
-            <button class="button" onclick="toggleSound()">🔊 Toggle Sound Effects 🔊</button>
-            <button class="button" onclick="randomizeEverything()">🎲 Randomize Everything! 🎲</button>
+            <button class="button" onclick="showModal()" style="transform: translateX(-50px);">🎉 Click for a Surprise! 🎉</button>
+            <button class="button" onclick="changeTheme()" style="transform: translateX(-50px);">🎨 Change Theme (It Gets Worse!) 🎨</button>
+            <button class="button" onclick="addMoreChaos()" style="transform: translateX(-50px);">💥 Add More Chaos! 💥</button>
+            <button class="button" onclick="checkChaosLevel()" style="transform: translateX(-50px);">📊 Check Chaos Level 📊</button>
+            <button class="button" onclick="toggleSound()" style="transform: translateX(-50px);">🔊 Toggle Sound Effects 🔊</button>
+            <button class="button" onclick="randomizeEverything()" style="transform: translateX(-50px);">🎲 Randomize Everything! 🎲</button>
         </div>
 
         <div class="footer">
-            <p>🌶️ Made with 100% pure chaos and bad decisions 🌶️</p>
-            <p>💩 No designers were harmed in the making of this website 💩</p>
-            <p>🎪 This is what happens when you let AI design websites 🎪</p>
+            <p>🍊 Made with 100% pure orange disappointment and bad decisions 🍊</p>
+            <p>💩 No customers were satisfied in the making of this store 💩</p>
+            <p>🎪 This is what happens when you let AI design shopping websites 🎪</p>
+            <p>🚀 Deployed on GitHub Pages for maximum shopping frustration! 🚀</p>
         </div>
     </div>
 
@@ -321,11 +379,11 @@
     <div id="surpriseModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <h2 style="color: #ff0000; font-size: 2em;">🎉 SURPRISE! 🎉</h2>
+            <h2 style="color: #ff0000; font-size: 2em;">🍊 ORANGE SURPRISE! 🍊</h2>
             <p style="color: #000080; font-size: 1.3em;">You clicked the button! Here's your reward:</p>
-            <p style="color: #000080; font-size: 1.2em;">🎪 This website is now even more terrible! 🎪</p>
-            <p style="color: #000080; font-size: 1.1em;">🌈 Enjoy the rainbow chaos! 🌈</p>
-            <button class="button" onclick="closeModal()">Close This Mess</button>
+            <p style="color: #000080; font-size: 1.2em;">🍊 This orange store is now even more terrible! 🍊</p>
+            <p style="color: #000080; font-size: 1.1em;">🍎 We autocorrected your oranges to apples! 🍎</p>
+            <button class="button" onclick="closeModal()" style="transform: translateX(-50px);">Close This Mess</button>
         </div>
     </div>
 
@@ -334,10 +392,10 @@
         let themeIndex = 0;
         let soundEnabled = false;
         const themes = [
-            { bg: 'linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff0000)', title: '🌶️ THE WORST WEBSITE EVER 🌶️' },
-            { bg: 'linear-gradient(45deg, #ff69b4, #32cd32, #ff4500, #9370db)', title: '🎪 THE CIRCUS WEBSITE 🎪' },
-            { bg: 'linear-gradient(45deg, #ff1493, #00ced1, #ffd700, #ff6347)', title: '🌈 RAINBOW DISASTER 🌈' },
-            { bg: 'linear-gradient(45deg, #da70d6, #20b2aa, #ffa500, #dc143c)', title: '💩 THE MESSIEST SITE EVER 💩' }
+            { bg: 'linear-gradient(45deg, #ffa500, #ff8c00, #ff4500, #ff6347)', title: '🍊 THE WORST ORANGE STORE EVER 🍊' },
+            { bg: 'linear-gradient(45deg, #ff69b4, #32cd32, #ff4500, #9370db)', title: '🎪 THE ORANGE CIRCUS 🎪' },
+            { bg: 'linear-gradient(45deg, #ff1493, #00ced1, #ffd700, #ff6347)', title: '🍊 ORANGE DISASTER 🍊' },
+            { bg: 'linear-gradient(45deg, #da70d6, #20b2aa, #ffa500, #dc143c)', title: '💩 THE MESSIEST ORANGE STORE 💩' }
         ];
 
         function showModal() {
@@ -390,44 +448,11 @@
             }
         }
 
-        // Add random chaos on page load
-        window.onload = function() {
-            for (let i = 0; i < 5; i++) {
-                setTimeout(() => addMoreChaos(), i * 500);
-            }
-        };
-
-        // Add chaos on mouse movement
-        let mouseChaosTimeout;
-        document.addEventListener('mousemove', function(e) {
-            clearTimeout(mouseChaosTimeout);
-            mouseChaosTimeout = setTimeout(() => {
-                if (Math.random() < 0.1) {
-                    addMoreChaos();
-                }
-            }, 100);
-        });
-
-        // Close modal when clicking outside
-        window.onclick = function(event) {
-            const modal = document.getElementById('surpriseModal');
-            if (event.target === modal) {
-                closeModal();
-            }
-        }
-
         function checkChaosLevel() {
-            fetch('/api/chaos')
-                .then(response => response.json())
-                .then(data => {
-                    const message = `🌶️ Current Chaos Level: ${data.chaosLevel}% 🌶️\n${data.message}`;
-                    alert(message);
-                    addMoreChaos();
-                })
-                .catch(error => {
-                    alert('🌶️ Chaos level: INFINITE! 🌶️');
-                    addMoreChaos();
-                });
+            const chaosLevel = Math.floor(Math.random() * 100);
+            const message = `🌶️ Current Chaos Level: ${chaosLevel}% 🌶️\n🌶️ The chaos is real! 🌶️`;
+            alert(message);
+            addMoreChaos();
         }
 
         function toggleSound() {
@@ -484,6 +509,106 @@
             
             alert('🎲 Everything has been randomized! Pure chaos! 🎲');
         }
+
+        // Add random chaos on page load
+        window.onload = function() {
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => addMoreChaos(), i * 500);
+            }
+        };
+
+        // Add chaos on mouse movement
+        let mouseChaosTimeout;
+        document.addEventListener('mousemove', function(e) {
+            clearTimeout(mouseChaosTimeout);
+            mouseChaosTimeout = setTimeout(() => {
+                if (Math.random() < 0.1) {
+                    addMoreChaos();
+                }
+            }, 100);
+        });
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            const modal = document.getElementById('surpriseModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+
+        // Terrible search function that autocorrects orange to apple
+        function searchProducts() {
+            const searchInput = document.getElementById('searchBar');
+            const searchResult = document.getElementById('searchResult');
+            let searchTerm = searchInput.value.toLowerCase();
+            
+            // Terrible autocorrect: always change orange to apple
+            if (searchTerm.includes('orange')) {
+                searchTerm = searchTerm.replace(/orange/g, 'apple');
+                searchInput.value = searchInput.value.replace(/orange/gi, 'apple');
+                searchResult.innerHTML = '🍎 Autocorrect: Changed "orange" to "apple" because we hate oranges! 🍎<br>';
+            }
+            
+            // Show terrible search results
+            const results = [
+                '🍎 Found: Apple products (because we autocorrected your search)',
+                '🍎 Found: Apple juice (not orange juice)',
+                '🍎 Found: Apple pie (definitely not orange pie)',
+                '🍎 Found: Apple sauce (orange sauce is gross anyway)'
+            ];
+            
+            searchResult.innerHTML += results.join('<br>');
+            addMoreChaos();
+        }
+
+        // Terrible buying function
+        function buyOrange(productName) {
+            const prices = {
+                'Fresh Oranges': '$999.99',
+                'Organic Oranges': '$1,499.99',
+                'Orange Juice': '$2,999.99',
+                'Orange Marmalade': '$3,999.99'
+            };
+            
+            // Randomly change the price when they try to buy
+            const randomPrice = Math.floor(Math.random() * 10000) + 1000;
+            const newPrice = `$${randomPrice}.99`;
+            
+            alert(`🍊 You tried to buy ${productName} for ${prices[productName]}!\n\nBut the price just changed to ${newPrice}!\n\nThis is the worst shopping experience ever! 🍊`);
+            
+            // Update the displayed price randomly
+            const priceElements = document.querySelectorAll('.gallery-item span');
+            priceElements.forEach(element => {
+                if (Math.random() < 0.3) {
+                    const newRandomPrice = Math.floor(Math.random() * 10000) + 1000;
+                    element.textContent = `Price: $${newRandomPrice}.99`;
+                }
+            });
+            
+            addMoreChaos();
+        }
+
+        // Add click event listeners for misaligned buttons
+        document.addEventListener('click', function(event) {
+            if (event.target.classList.contains('button')) {
+                // Check if click is 50px to the left of the button (the "real" click area)
+                const rect = event.target.getBoundingClientRect();
+                const clickX = event.clientX;
+                const buttonLeft = rect.left;
+                
+                // If click is not in the "real" click area (50px to the left), don't trigger
+                if (clickX > buttonLeft - 50 && clickX < buttonLeft) {
+                    // This is the "real" click area - let it work
+                    return;
+                } else if (clickX >= buttonLeft && clickX <= buttonLeft + rect.width) {
+                    // This is the visible button area - prevent the click
+                    event.preventDefault();
+                    event.stopPropagation();
+                    alert('🍊 You clicked the button, but you need to click 50px to the left of it! This is terrible UX! 🍊');
+                    return false;
+                }
+            }
+        });
     </script>
 </body>
 </html> 
