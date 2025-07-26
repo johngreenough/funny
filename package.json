@@ -1,0 +1,19 @@
+{
+  "name": "worst-website-ever",
+  "version": "1.0.0",
+  "description": "The most hilariously bad UI website ever created",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["terrible", "ui", "bad-design", "funny", "chaos"],
+  "author": "Your Friendly Neighborhood Chaos Creator",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+} 
