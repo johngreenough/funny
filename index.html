@@ -546,18 +546,10 @@
             if (searchTerm.includes('orange')) {
                 searchTerm = searchTerm.replace(/orange/g, 'apple');
                 searchInput.value = searchInput.value.replace(/orange/gi, 'apple');
-                searchResult.innerHTML = '🍎 Did you mean "apple"? Here are some apple products: 🍎<br>';
             }
             
-            // Show terrible search results
-            const results = [
-                '🍎 Found: Apple products (because we autocorrected your search)',
-                '🍎 Found: Apple juice (not orange juice)',
-                '🍎 Found: Apple pie (definitely not orange pie)',
-                '🍎 Found: Apple sauce (orange sauce is gross anyway)'
-            ];
-            
-            searchResult.innerHTML += results.join('<br>');
+            // Show no results
+            searchResult.innerHTML = `No results found for: "${searchInput.value}"`;
             addMoreChaos();
         }
 
